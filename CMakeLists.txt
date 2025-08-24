@@ -21,6 +21,11 @@ if(BUILD_TESTS)
   target_link_libraries(test_minimal PRIVATE frontier)
   target_compile_options(test_minimal PRIVATE -Wall -Wextra -Wpedantic -Werror)
   add_test(NAME MinimalTest COMMAND test_minimal)
+
+  add_executable(test_bucket_heap tests/test_bucket_heap.cpp)
+  target_link_libraries(test_bucket_heap PRIVATE frontier)
+  target_compile_options(test_bucket_heap PRIVATE -Wall -Wextra -Wpedantic -Werror)
+  add_test(NAME BucketHeapTest COMMAND test_bucket_heap)
 endif()
 
 if(BUILD_BENCHMARKS)
