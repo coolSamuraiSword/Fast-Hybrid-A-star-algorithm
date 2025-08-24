@@ -1,1 +1,1 @@
-# Fast-Hybrid-A--algorithm
+# Fast-Hybrid-A-star-algorithm
