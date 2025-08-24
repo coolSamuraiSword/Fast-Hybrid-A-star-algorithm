@@ -8,7 +8,7 @@
 namespace hybrid_a_star::frontier {
 
 /**
- * @brief Interface for A*/Hybrid A* frontier containers.
+ * @brief Interface for A* / Hybrid A* frontier containers.
  *
  * The frontier stores candidate nodes ordered by their estimated total cost
  * \f$f\f$.  Stale entries created by the lack of decrease-key support must be
